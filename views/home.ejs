@@ -1,5 +1,22 @@
-<% if (!user) { %>
-	<p>Welcome! Please <a href="/login">log in</a>.</p>
-<% } else { %>
-	<p>Hello, <%= user.username %>. View your <a href="/profile">profile</a>.</p>
-<% } %>
+<!DOCTYPE html>
+<head>
+	<% include assets %>
+</head>
+<html>
+	<body>
+		<div class="container pt-3">
+			<div class="row">
+				<div class="col-12">
+
+					<% if (!user) { %>
+						<p>Salut! Te rog <a href="/login">intra in cont</a>.</p>
+					<% } else { %>
+						<p>Salut, <%= user.username %>. Vezi-ti <a href="/profile">profilul</a>.</p>
+					<% } %>	
+					
+				</div>
+			</div>			
+		</div>		
+	</body>
+</html>
+
